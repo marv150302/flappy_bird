@@ -1,7 +1,7 @@
 function main() {
   requestAnimationFrame(main);
   if (collision()) {
-    //game.over = true;
+    game.over = true;
   }
   render()
   if (game.start) {
