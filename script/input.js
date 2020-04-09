@@ -7,11 +7,11 @@ document.addEventListener("keydown",function (value) {
 document.addEventListener("keyup",function (value) {
   player.key[value.keyCode]=false;
 })
-canvas.addEventListener("touchstart",function () {
+document.addEventListener("touchstart",function () {
   player.key["touch"]=true;
   game.start=true
 })
-canvas.addEventListener("touchend",function () {
+document.addEventListener("touchend",function () {
   player.key["touch"]=false;
   game.start=true
 })
