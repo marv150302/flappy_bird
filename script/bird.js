@@ -20,7 +20,7 @@ Bird.prototype.draw = function () {
   this.ctx.drawImage(resources.get(this._url),this.x,this.y)
 }
 Bird.prototype.update = function () {
-  !this.key[32] || !this.key["touch"] ? this.y += 5 : this.y-=15
+  !this.key[32] && !this.key["touch"] ? this.y += 5 : this.y-=15
   this._url = this.colors[this.color_index];
 }
 Bird.prototype.score = function (pipe_x,width) {
