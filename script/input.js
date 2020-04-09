@@ -7,9 +7,15 @@ document.addEventListener("keydown",function (value) {
 document.addEventListener("keyup",function (value) {
   player.key[value.keyCode]=false;
 })
+var doubleTouchStartTimestamp = 0
 document.addEventListener("touchstart",function () {
   player.key[32]=true;
   game.start=true
+  var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
 })
 document.addEventListener("touchend",function () {
   player.key[32]=false;
