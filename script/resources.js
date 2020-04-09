@@ -22,6 +22,6 @@ var game = {
   start : false,
   over : false,
   collision : function (bird_y,height) {
-    return (bird_y <= 0 || bird_y + height > canvas.height - 190);
+    return (bird_y + height > canvas.height - 190);
   }
 }
