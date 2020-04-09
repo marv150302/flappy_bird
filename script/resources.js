@@ -16,7 +16,7 @@ canvas.pipe_ctx().scale(canvas.scale,canvas.scale);
 canvas.pipe_ctx().imageSmoothingEnabled = false;
 var player = new Bird(canvas.bird_ctx(),"./images/blue_bird.png");
 var pipe = new Pipe(canvas.pipe_ctx());
-var cloud = new Cloud(canvas.pipe_ctx());
+var cloud = new Cloud(canvas.pipe_ctx(),"./images/small-cloud.png");
 //
 var game = {
   start : false,
