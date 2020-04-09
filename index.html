@@ -10,11 +10,15 @@
 
     <canvas id="pipe" width="800" height="500"></canvas>
     <canvas id="game" width="800" height="500"></canvas>
-    <div class="controls" id="controls">
-      <p>L : Change the Bird Colors</p>
-      <p>ENTER : Start the Game</p>
-      <p>SPACE-BAR: Jump</p>
+    <div class="start" id="start">
+      <p>Flappy Bird</p>
+      <img src="images/red_bird.png" alt="">
+      <input type="text" name="" value="" placeholder="Insert Your Name">
+      <br>
+      <button type="button" name="button" onclick="start()">Play</button>
     </div>
+
+
     <script src="script/animation.js" charset="utf-8"></script>
     <script src="script/jquery.js" charset="utf-8"></script>
     <script src="script/collision.js" charset="utf-8"></script>
