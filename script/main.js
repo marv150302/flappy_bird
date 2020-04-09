@@ -15,8 +15,10 @@ function main() {
 function render() {
   player.draw();
   pipe.draw()
+  cloud.draw()
   pipe.position.length < 10 ? pipe.random() : false
-  pipe.position.forEach((item, i) => {
+  cloud.position.length < 20 ? cloud.random() : false
+  pipe.position.forEach((item) => {
     player.score(item.x,pipe.width)
   });
 }

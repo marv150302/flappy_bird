@@ -12,10 +12,12 @@ var canvas = {
 canvas.bird_ctx().scale(canvas.scale,canvas.scale);
 canvas.bird_ctx().imageSmoothingEnabled = false;
 //
-canvas.pipe_ctx().scale(canvas.scale,canvas.scale)
+canvas.pipe_ctx().scale(canvas.scale,canvas.scale);
 canvas.pipe_ctx().imageSmoothingEnabled = false;
 var player = new Bird(canvas.bird_ctx(),"./images/blue_bird.png");
-var pipe = new Pipe(canvas.pipe_ctx())
+var pipe = new Pipe(canvas.pipe_ctx());
+var cloud = new Cloud(canvas.pipe_ctx());
+//
 var game = {
   start : false,
   over : false,
