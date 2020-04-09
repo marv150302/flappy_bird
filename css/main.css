@@ -12,9 +12,22 @@ canvas{
 body{
   background-color: lightyellow;
 }
-div{
-  color: black;
-  font-size: 17px;
-  font-family: helvetica;
+div.start{
+  font-size: 45px;
+  color: white;
+  font-family: flappy_bird;
   font-weight: bold;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+  background: #3d647f;
+  text-align: center;
+}
+@font-face {
+  font-family: flappy_bird;
+  src: url("flappybird/FlappyBirdy.ttf");
 }

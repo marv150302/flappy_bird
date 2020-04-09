@@ -4,6 +4,6 @@ resources.load([
   "./images/yellow_bird.png",
   "./images/pipe/ground.png",
   "./images/pipe/top.png",
-  "./images/pipe/small-cloud.png"
+  "./images/small-cloud.png"
 ])
 resources.onReady(main)

@@ -12,9 +12,6 @@ var Pipe = function (ctx) {
   this.ctx.shadowOffsetY = 5;
 }
 Pipe.prototype.draw = function () {
-  this.ctx.clearRect(0,0,canvas.width,canvas.height);
-  this.ctx.fillStyle = "#69b19d"
-  this.ctx.fillRect(0,0,canvas.width,canvas.height)
   this.position.forEach((item) => {
     this.ctx.drawImage(resources.get(item._url),item.x,item.y);
   });
@@ -25,14 +22,12 @@ Pipe.prototype.update = function () {
   });
 }
 Pipe.prototype.push = function (x,y,_url) {
-
   this.position.push({
     x : x,
     y : y,
     _url : _url
   })
 }
-var cont = 50
 Pipe.prototype.random = function () {
   var _url;
   var y;

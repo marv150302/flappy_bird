@@ -5,5 +5,5 @@ function collision() {
       return true;
     }
   }
-  return game.collision(player.y,player.height) ? true : false
+  //return game.collision(player.y,player.height) ? true : false
 }

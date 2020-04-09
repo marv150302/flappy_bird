@@ -10,6 +10,8 @@ var Bird = function (ctx,_url) {
   this.points = 0;
   this.color_index = 0;
   this.colors = ["./images/blue_bird.png","./images/red_bird.png","./images/yellow_bird.png"];
+  this.angle = 0;
+  this.name = "";
 }
 Bird.prototype.draw = function () {
   this.ctx.clearRect(0,0,canvas.width,canvas.height);
