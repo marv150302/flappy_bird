@@ -13,7 +13,7 @@ body{
   background-color: lightyellow;
 }
 div.start{
-  font-size: 25px;
+  font-size: 45px;
   color: white;
   font-family: flappy_bird;
   font-weight: bold;
@@ -26,9 +26,6 @@ div.start{
   margin: -100px 0 0 -150px;
   background: #3d647f;
   text-align: center;
-}
-button,input,div{
-  border: 1px solid black;
 }
 @font-face {
   font-family: flappy_bird;

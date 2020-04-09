@@ -48,9 +48,13 @@ function gameOver() {
   $("div.start").append("<br>");
   $("div.start").append("Your Score: " + player.points);
   $("div.start").append("<br>");
+<<<<<<< HEAD
   $("div.start").append("<br>");
   $("div.start").append("<br>");
   $("div.start").append("<button type='button' name='button' onclick='reset()'>RESET</button>");
+=======
+  $("div.start").append("<button type='button' name='button' onclick='reset()'>Reset</button>");
+>>>>>>> d946826826234acf527fcff276755f93ce94c499
 
 }
 function reset() {
