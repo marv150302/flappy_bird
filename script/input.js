@@ -8,10 +8,10 @@ document.addEventListener("keyup",function (value) {
   player.key[value.keyCode]=false;
 })
 document.addEventListener("touchstart",function () {
-  player.key["touch"]=true;
+  player.key[32]=true;
   game.start=true
 })
 document.addEventListener("touchend",function () {
-  player.key["touch"]=false;
+  player.key[32]=false;
   game.start=true
 })
