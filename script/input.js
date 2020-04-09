@@ -1,10 +1,7 @@
 document.addEventListener("keydown",function (value) {
   player.key[value.keyCode]=true;
-  if (value.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("div  button").click();
+  if(value.keyCode == 13){
+    $('div.start button').click();
   }
   value.keyCode==76 ? player.color_index++ : false//L key
   player.color_index>2 ? player.color_index=0 : false
