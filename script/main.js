@@ -2,6 +2,7 @@ function main() {
   requestAnimationFrame(main);
   if (collision()) {
     game.over = true;
+    location.reload();
   }
   render()
   if (game.start) {
