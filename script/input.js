@@ -8,6 +8,7 @@ document.addEventListener("keyup",function (value) {
   player.key[value.keyCode]=false;
 })
 document.addEventListener("touchstart",function () {
+  document.write("ciao")
   player.key["touch"]=true;
   game.start=true
 })
