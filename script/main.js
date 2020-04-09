@@ -51,7 +51,6 @@ function gameOver() {
   $("div.start").append("<br>");
   $("div.start").append("<br>");
   $("div.start").append("<button type='button' name='button' onclick='reset()'>RESET</button>");
-
 }
 function reset() {
   location.reload();
